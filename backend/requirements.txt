@@ -66,5 +66,3 @@ ultralytics-thop==2.0.19
 urllib3==2.7.0
 uvicorn==0.46.0
 websockets==16.0
-psycopg2-binary
-tifffile==2026.5.2
