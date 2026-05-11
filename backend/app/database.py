@@ -6,6 +6,10 @@ from app.config import settings
 
 DATABASE_URL = settings.DATABASE_URL
 
+# Render sometimes provides postgres://, SQLAlchemy needs postgresql://
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
 connect_args = {}
 
 if DATABASE_URL.startswith("sqlite"):
