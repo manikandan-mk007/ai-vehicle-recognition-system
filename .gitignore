@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+backend/venv/
+.env
+backend/.env
+frontend/.env
+*.env
+
+# Database
+*.sqlite3
+*.db
+backend/vehicle_detection.db
+vehicle_detection.db
+
+# Backend storage generated files
+backend/app/storage/uploads/*
+backend/app/storage/outputs/*
+backend/app/storage/crops/*
+backend/app/storage/reports/*
+
+# Keep folders
+!backend/app/storage/uploads/.gitkeep
+!backend/app/storage/outputs/.gitkeep
+!backend/app/storage/crops/.gitkeep
+!backend/app/storage/reports/.gitkeep
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+frontend/dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Model cache
+runs/
+wandb/
+*.onnx
+*.engine
+
+# Large dataset folders
+datasets/
+training/runs/
+
+
+# testing scripts
+backend/check_all_models.py
+backend/check_classifiers.py
+backend/check_model.py
+backend/check_plate_model.py
